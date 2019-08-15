@@ -8,9 +8,11 @@
 		
 		padding: 21px 100px;
 		margin: 0 -100px;
-		.media(@mobile; {
-			margin: 0;
-			padding: 21px 0;
+		.media(@tablet; {
+			padding: 18px 25px 0px;
+			margin: 0 -25px;
+			#flex.dir(column);
+			#flex.justify(center);
 		})
 	}
 
@@ -36,12 +38,15 @@
 			}
 		}
 
-		.media(@mobile; {
+		.media(@tablet; {
 			.text-content, .img-content {
 				width: 100%;
 				padding: 0;
 			}
-		}) 
+			.img-content img {
+				width: 100%;
+			}
+		})
 	}
 
 	.banner {
@@ -71,7 +76,7 @@
 			padding-right: 1%;
 			padding-left: 0;
 		}
-		.media(@mobile; {
+		.media(@tablet; {
 			.img-content {
 				order: 2;
 			}
@@ -85,6 +90,9 @@
 		img {
 			border-radius: 10px;
 		}
+		.media(@tablet; {
+			width: 100%;
+		})
 	}
 
 	.content-pick {
@@ -97,10 +105,14 @@
 			width: 30%;
 			margin-bottom: 30px;
 		}
-		.media(@mobile; {
+		.media(@tablet; {
 			#flex.wrap();
+			padding: 30px 45px 0;
 			.destination {
 				width: 100%;
+			}
+			.btn {
+				display: block;
 			}
 		})
 	}
