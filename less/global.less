@@ -50,7 +50,12 @@ img {
   .media(@tablet; {
     max-width: 500px;
     padding: 0 25px;
-  })
+  });
+  .media(@mobile; {
+    width: 100%;
+    min-width: 320px;
+    padding: 0 15px;
+  });
 }
 .btn {
   .signup-btn();

@@ -13,7 +13,11 @@
 			margin: 0 -25px;
 			#flex.dir(column);
 			#flex.justify(center);
-		})
+		});
+		.media(@mobile; {
+			padding: 18px 15px 0px;
+			margin: 0 -15px;
+		});
 	}
 
 	.content-section {
@@ -46,7 +50,7 @@
 			.img-content img {
 				width: 100%;
 			}
-		})
+		});
 	}
 
 	.banner {
@@ -60,6 +64,8 @@
 		.img-content img {
 			border-radius: 0;
 			margin-bottom: 18px;
+			object-fit: cover;
+			min-height: 135px;
 		}
 	}
 
@@ -80,7 +86,7 @@
 			.img-content {
 				order: 2;
 			}
-		})
+		});
 	}
 
 	.content-destination {
@@ -92,7 +98,7 @@
 		}
 		.media(@tablet; {
 			width: 100%;
-		})
+		});
 	}
 
 	.content-pick {
@@ -114,7 +120,10 @@
 			.btn {
 				display: block;
 			}
-		})
+		});
+		.media(@mobile; {
+			padding: 30px 30px 0;
+		});
 	}
 }
 
