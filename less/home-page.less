@@ -69,6 +69,47 @@
 		}
 	}
 
+	.form {
+		margin-top: 0;
+		padding-top: 30px;
+		border-top: 2px dashed @silver;
+		label {
+			padding-top: 10px;
+			line-height: 2em;
+		}
+		label, input, textarea, select {
+			display: block;
+			font-size: 1.5rem;
+		}
+		input, textarea, select {
+			width: 100%;
+			line-height: 1.25em;
+		}
+		textarea {
+			min-width: 100%;
+			min-height: 100px;
+		}
+		button {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			border: 0;
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin-top: 15px;
+		}
+		.img-content img {
+			object-fit: cover;
+			height: 100%;
+		}
+		.media(@tablet; {
+			.text-content {
+				padding-top: 30px;
+				order: 2;
+			}
+		});
+	}
+
 	.inverse-content {
 		padding-bottom: 30px;
 		border-bottom: 2px dashed @navigation-border;

@@ -301,6 +301,51 @@ nav a {
   object-fit: cover;
   min-height: 135px;
 }
+.home .form {
+  margin-top: 0;
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+}
+.home .form label {
+  padding-top: 10px;
+  line-height: 2em;
+}
+.home .form label,
+.home .form input,
+.home .form textarea,
+.home .form select {
+  display: block;
+  font-size: 1.5rem;
+}
+.home .form input,
+.home .form textarea,
+.home .form select {
+  width: 100%;
+  line-height: 1.25em;
+}
+.home .form textarea {
+  min-width: 100%;
+  min-height: 100px;
+}
+.home .form button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.home .form .img-content img {
+  object-fit: cover;
+  height: 100%;
+}
+@media (max-width: 1000px) {
+  .home .form .text-content {
+    padding-top: 30px;
+    order: 2;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;

@@ -85,6 +85,33 @@
 				<div class="btn">Sign Me Up!</div>
 			</div>
 		</section>
+		<!-- Introduce a form with inputs allowing users to select a vacation package and a submit button at the bottom of the page. Introduce inputs for name, email, phone number, and an area for them to leave special instructions. -->
+		<section class="content-section form">
+			<div class="text-content">
+				<h2>Pick your vacation!</h2>
+				<form action="index.html" method="POST">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" />
+					<label for="email">Email</label>
+					<input type="text" name="email" id="email" />
+					<label for="phone">Phone</label>
+					<input type="number" name="phone" id="phone" />
+					<label for="package">Vacation Package</label>
+					<select name="package" id="package" required>
+						<option value="0">- Select a package -</option>
+						<option value="1">Fun In The Sun</option>
+						<option value="2">Mountain Excursion</option>
+						<option value="3">Island Getaway</option>
+					</select>
+					<label for="message">Special Instructions</label>
+					<textarea name="message" id="message"></textarea>
+					<button class="btn">Submit</button>
+				</form>
+			</div>
+			<div class="img-content">
+				<img src="img/adventure.jpg" alt="Let's go on an adventure!">
+			</div>
+		</section>
 	</div><!-- container -->
 
 	<footer class="footer">
