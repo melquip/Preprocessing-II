@@ -28,3 +28,9 @@
 	padding: .72em 2.89em;
 	border-radius: .8em;
 }
+
+.media(@breakpoint, @rules) {
+	@media @breakpoint {
+		@rules();
+	}
+}
