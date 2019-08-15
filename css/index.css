@@ -181,6 +181,7 @@ img {
   }
 }
 .btn {
+  cursor: pointer;
   display: inline-block;
   background-color: #128294;
   color: #FFFFFF;
@@ -188,6 +189,11 @@ img {
   text-align: center;
   padding: 0.72em 2.89em;
   border-radius: 0.8em;
+  transition: all 0.33s ease-in-out;
+}
+.btn:hover {
+  color: #FFEBCD;
+  background-color: #17A2B8;
 }
 nav {
   display: flex;
