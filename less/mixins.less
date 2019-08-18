@@ -1,1 +1,46 @@
 // Mixins in here
+#flex() {
+	.dir(@direction: row) {
+		flex-direction: @direction;
+	}
+	.wrap(@wrap: wrap) {
+		flex-wrap: @wrap;
+	}
+	.justify(@justifyContent) {
+		justify-content: @justifyContent;
+	}
+	.content(@alignContent: flex-start) {
+		align-content: @alignContent;
+	}
+	.items(@alignItems: flex-start) {
+		align-items: @alignItems;
+	}
+	.grow(@grow: 1) {
+		flex-grow: @grow;
+	}
+}
+
+.signup-btn(@fontSize: 1.8rem, @bgColor: darken(@eastern-blue, 8%)) {
+	cursor: pointer;
+	display: inline-block;
+	background-color: @bgColor;
+	color: @white;
+	font-size: @fontSize;
+	text-align: center;
+	padding: .72em 2.89em;
+	border-radius: .8em;
+}
+
+.animate-btn-hover(@time: 0.33s, @animation: ease-in-out, @color: @sandy-beach, @bgColor: @eastern-blue) {
+	transition: all @time @animation;
+	&:hover {
+		color: @color;
+		background-color: @bgColor;
+	}
+}
+
+.media(@breakpoint, @rules) {
+	@media @breakpoint {
+		@rules();
+	}
+}

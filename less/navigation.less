@@ -1,1 +1,21 @@
 // Navigation Styles here
+nav {
+	display: flex;
+	#flex.justify(flex-end);
+	#flex.grow();
+	padding-right: 16px;
+	a {
+		font-size: 1.65rem;
+		padding: 15px;
+		color: inherit;
+		text-decoration: none;
+	}
+	.media(@tablet; {
+		width: 100%;
+		padding-right: 0;
+		#flex.justify(space-around);
+		a {
+			padding: 15px 15px 10px;
+		}
+	});
+}
